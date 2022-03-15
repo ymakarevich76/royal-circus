@@ -1,3 +1,84 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="header__top">
+    <div class="header__top-container container">
+
+      <a href="index.html" class="header__wrap-logo" aria-label="Логотип">
+        <picture>
+          <source srcset="static/img/logo/logo.png" media="(min-width: 767px)">
+          <img class="header__logo" src="static/img/logo/logo-mob.png" alt="Логотип">
+        </picture>
+      </a>
+      <div class="header__contacts">
+        <div class="header__social social">
+          <a href="#" class="social__link" aria-label="Инстаграм">
+            <svg class="social__viber" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#insta"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Телеграм">
+            <svg class="social__teleg" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#teleg"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Вконтакте">
+            <svg class="social__whatsapp" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link" aria-label="Одноклассники">
+            <svg class="social__whatsapp" aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#ok"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__phone-adress phone-adress">
+          <a class="phone-adress__text" href="tel:+74951012346">+7 (495) 101–23–46
+          </a>
+          <span class="phone-adress__text">Москва, гастроли
+          </span>
+        </div>
+      </div>
+      <button class="header__burger btn-reset" type="button"></button>
+
+      <div class="header__img-bc">
+        <img src="static/img/bc/ann-bc.png" alt="Фото Анны">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="header__bottom">
+    <div class="header__bottom-container container">
+      <nav class="header__nav nav">
+        <button class="header__btn-close btn-reset"></button>
+        <ul class="header__nav-list nav__list list-reset">
+          <li class="nav__item"><a href="author-programs.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="tour.html" class="nav__link">Гастроли</a></li>
+          <li class="nav__item"><a href="author-programs.html" class="nav__link">Программы</a>
+            <ul class="nav__submenu-list list-reset">
+              <li class="nav__submenu-item">
+                <a href="#" class="nav__submenu-link">Авторские программы</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="#" class="nav__submenu-link">Программы для детей</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="#" class="nav__submenu-link">Программы с животными</a>
+              </li>
+              <li class="nav__submenu-item">
+                <a href="#" class="nav__submenu-link">Программы для взрослых</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="decoration.html" class="nav__link">Наши партнеры</a></li>
+          <li class="nav__item"><a href="media.html" class="nav__link">Медийность</a></li>
+          <li class="nav__item"><a href="reviews-gallery.html" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="about-us.html" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="cooperation.html" class="nav__link">Сотрудничество</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
 </header>

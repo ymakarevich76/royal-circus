@@ -7,15 +7,21 @@
   padding-right: 30px;
   padding-left: 30px;
 
-  @media (max-width: $xl) {
-    max-width: 960px;
+  // @media (max-width: $xl) {
+  //   max-width: 960px;
+  //   padding-right: 15px;
+  //   padding-left: 15px;
+  // }
+
+  @media (max-width: $lg) {
+    max-width: 930px;
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  @media (max-width: $lg) {
-    max-width: 720px;
-  }
+  // @media (max-width: $lg) {
+  //   max-width: 720px;
+  // }
 
   @media (max-width: $md) {
     max-width: 540px;

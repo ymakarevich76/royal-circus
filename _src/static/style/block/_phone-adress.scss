@@ -1,0 +1,20 @@
+.phone-adress__text {
+  font-weight: 600;
+  font-size: $fz-main;
+  line-height: 1.3;
+  font-family: $ff-main;
+  text-align: right;
+  color: $c-white;
+  letter-spacing: .03em;
+
+  transition: .2s;
+
+  &:last-child {
+    font-weight: 400;
+  }
+
+  &:first-child:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+}

@@ -1,18 +1,24 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "Gilroy", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: 20px;
 
-// //////////////////////////////////////// colors 
+// //////////////////////////////////////// colors
 $c-main: #000;
 $c-secondary: gray;
-$c-accent: orange;
+$c-accent: #dda440cc;
+$c-white: #fff;
+
+%gold {
+  background: linear-gradient(306.69deg, #cb8a1b -29.86%, #dda440 30.34%, #e9c005 66.18%, #e9c104 100%);
+}
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
 $xl: 1199.98px;
-$lg: 991.98px;
+// $lg: 991.98px;
+$lg: 1024.98px;
 $md: 767.98px;
 $sm: 575.98px;
 $xs: 425.98px;
