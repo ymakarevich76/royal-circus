@@ -1,2 +1,26 @@
 .title {
 }
+
+h1 {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 75px;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-white;
+  font-style: normal;
+}
+
+h2 {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: $ff-main;
+  text-align: left;
+  color: $c-white;
+  font-style: normal;
+}

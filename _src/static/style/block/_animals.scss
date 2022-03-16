@@ -1,0 +1,139 @@
+.animals {
+  position: relative;
+
+  padding-top: 112px;
+  padding-bottom: 155px;
+
+  background-color: $c-main;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: block;
+  }
+
+  &::before {
+    top: -92px;
+    left: 0;
+
+    width: 766px;
+    height: 1357px;
+
+    background: url("../img/bc/ann-left.png") no-repeat;
+  }
+
+  &::after {
+    top: 209px;
+    right: 0;
+
+    width: 556px;
+    height: 959px;
+
+    background: url("../img/bc/ann-right.png") no-repeat;
+  }
+}
+
+.animals__container {
+  max-width: 860px;
+}
+
+.animals__title {
+  padding-bottom: 10px;
+}
+
+.animals__line {
+  position: relative;
+
+  margin-bottom: 40px;
+
+  &::after {
+    @extend %gold;
+
+    content: "";
+    bottom: 0;
+
+    display: block;
+    max-width: 800px;
+    height: 4px;
+    margin: 0 auto;
+
+    border-radius: 7px;
+  }
+}
+
+.animals__wrap-text {
+  margin-bottom: 40px;
+}
+
+.animals__text {
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.25;
+  font-family: $ff-main;
+  color: $c-white;
+
+  &:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  &--bold {
+    margin-bottom: 0;
+
+    font-weight: 700;
+  }
+
+  &--mg {
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+}
+
+.animals__wrap-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.animals__wrap-video iframe {
+  border: none;
+}
+
+.animals__list {
+  margin: 20px 0 25px;
+}
+
+.animals__item {
+  position: relative;
+
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.25;
+  font-family: $ff-main;
+  color: $c-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    background-color: $c-white;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animals__wrap-btn {
+  display: flex;
+  justify-content: center;
+}

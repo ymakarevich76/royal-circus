@@ -1,0 +1,27 @@
+.cards {
+  padding: 160px 0 90px;
+
+  background-color: $c-main;
+}
+
+.cards__container {
+  max-width: 1145px;
+}
+
+.cards__inner {
+  // max-width: 1080px;
+}
+
+.cards__title {
+  margin-bottom: 90px;
+}
+
+.cards__slider {
+  margin-bottom: 90px;
+  padding: 30px;
+}
+
+.cards__wrap-btn {
+  display: flex;
+  justify-content: center;
+}

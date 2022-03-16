@@ -1,2 +1,15 @@
 .btn {
+  @extend %gold;
+
+  min-width: 300px;
+  padding: 8px 80px;
+
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 63px;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  border-radius: 60px;
 }
