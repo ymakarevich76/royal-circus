@@ -12,4 +12,12 @@
   font-style: normal;
 
   border-radius: 60px;
+
+  @media (max-width: $md) {
+    min-width: 215px;
+    padding: 6px 57px;
+
+    font-size: 23.5px;
+    line-height: 45px;
+  }
 }

@@ -2,9 +2,17 @@
   position: relative;
 
   padding-top: 112px;
-  padding-bottom: 155px;
 
   background-color: $c-main;
+
+  @media (max-width: $lg) {
+    padding-bottom: 140px;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 
   &::after,
   &::before {
@@ -22,6 +30,21 @@
     height: 1357px;
 
     background: url("../img/bc/ann-left.png") no-repeat;
+
+    @media (max-width: $lg) {
+      top: 15px;
+
+      background: url("../img/bc/tinsel-left-tab.png") no-repeat;
+    }
+
+    @media (max-width: $md) {
+      top: -217px;
+
+      width: 130px;
+      height: 393px;
+
+      background: url("../img/bc/tinsel-left-mob.png") no-repeat;
+    }
   }
 
   &::after {
@@ -32,11 +55,27 @@
     height: 959px;
 
     background: url("../img/bc/ann-right.png") no-repeat;
+
+    @media (max-width: $lg) {
+      background: none;
+    }
   }
 }
 
 .animals__container {
+  position: relative;
+  z-index: 10;
+
   max-width: 860px;
+
+  @media (max-width: $lg) {
+    max-width: 830px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 310px;
+    padding: 0 30px;
+  }
 }
 
 .animals__title {
@@ -47,6 +86,10 @@
   position: relative;
 
   margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
 
   &::after {
     @extend %gold;
@@ -76,6 +119,13 @@
   font-family: $ff-main;
   color: $c-white;
 
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
   &:nth-child(2) {
     margin-bottom: 40px;
   }
@@ -96,10 +146,20 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    margin-right: -35px;
+    margin-left: -35px;
+  }
 }
 
 .animals__wrap-video iframe {
   border: none;
+
+  @media (max-width: $md) {
+    width: 323px;
+    height: 182px;
+  }
 }
 
 .animals__list {
@@ -116,6 +176,12 @@
   line-height: 1.25;
   font-family: $ff-main;
   color: $c-white;
+
+  @media (max-width: $md) {
+    // margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
   &::before {
     content: "";
@@ -136,4 +202,15 @@
 .animals__wrap-btn {
   display: flex;
   justify-content: center;
+}
+
+.animals__btn {
+  // @media (max-width: $md) {
+  //   min-width: 286px;
+  //   padding: 6px 30px;
+  // }
+}
+
+.animals__wrap-video + .animals__wrap-text .animals__text:nth-child(2) {
+  margin-bottom: 25px;
 }

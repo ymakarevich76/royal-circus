@@ -2,23 +2,51 @@
   padding: 160px 0 90px;
 
   background-color: $c-main;
+
+  @media (max-width: $lg) {
+    padding-top: 125px;
+  }
+
+  @media (max-width: $md) {
+    margin-top: -1px;
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
 }
 
 .cards__container {
   max-width: 1145px;
 }
 
-.cards__inner {
-  // max-width: 1080px;
-}
-
 .cards__title {
   margin-bottom: 90px;
+
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
 }
 
 .cards__slider {
   margin-bottom: 90px;
   padding: 30px;
+
+  @media (max-width: $xl) {
+    max-width: 690px;
+    margin-bottom: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: $lg) {
+    max-width: 690px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 220px;
+    margin-bottom: 30px;
+  }
 }
 
 .cards__wrap-btn {

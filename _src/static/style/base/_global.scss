@@ -25,7 +25,6 @@ body {
     position: absolute;
 
     display: block;
-    // width: 100%;
     height: 100%;
 
     background-size: 100%;
@@ -37,6 +36,21 @@ body {
     width: 623px;
 
     background: url("../img/bc/tinsel-left.png") no-repeat;
+
+    @media (max-width: $lg) {
+      top: -360px;
+
+      background: url("../img/bc/tinsel-left-tab.png") no-repeat;
+    }
+
+    @media (max-width: $md) {
+      top: -67px;
+
+      width: 130px;
+      height: 393px;
+
+      background: url("../img/bc/tinsel-left-mob.png") no-repeat;
+    }
   }
 
   &::after {
@@ -46,6 +60,23 @@ body {
     width: 603px;
 
     background: url("../img/bc/tinsel-right.png") no-repeat;
+
+    @media (max-width: $lg) {
+      top: -545px;
+
+      width: 395px;
+
+      background: url("../img/bc/tinsel-right-tab.png") no-repeat;
+    }
+
+    @media (max-width: $md) {
+      top: -125px;
+
+      width: 125px;
+      height: 393px;
+
+      background: url("../img/bc/tinsel-right-mob.png") no-repeat;
+    }
   }
 }
 

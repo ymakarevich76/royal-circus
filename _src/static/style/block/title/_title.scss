@@ -11,6 +11,11 @@ h1 {
   text-align: center;
   color: $c-white;
   font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: 32px;
+    line-height: 33px;
+  }
 }
 
 h2 {
@@ -23,4 +28,9 @@ h2 {
   text-align: left;
   color: $c-white;
   font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: $fz-main;
+    line-height: 25px;
+  }
 }

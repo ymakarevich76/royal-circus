@@ -3,7 +3,7 @@
   justify-content: space-between;
   min-width: 217px;
 
-  @media (max-width: $sm) {
+  @media (max-width: $md) {
     justify-content: center;
   }
 }
@@ -30,5 +30,10 @@
 
   &:hover {
     @extend %gold;
+  }
+
+  @media (max-width: $md) {
+    width: 28px;
+    height: 28px;
   }
 }
