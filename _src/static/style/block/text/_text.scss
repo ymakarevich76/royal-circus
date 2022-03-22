@@ -1,0 +1,44 @@
+.text {
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.25;
+  font-family: $ff-main;
+  color: $c-white;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--mg {
+    margin-top: 80px;
+    margin-bottom: 120px;
+
+    @media (max-width: $md) {
+      margin-top: 30px;
+    }
+  }
+
+
+  & a {
+    &:hover {
+      color: $c-white;
+      text-decoration: none;
+
+      border-bottom: 1px solid $c-white;
+    }
+  }
+
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

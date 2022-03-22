@@ -1,41 +1,37 @@
 .tinsel {
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: -40%;
 
-  width: 100%;
-  height: 1450px;
-  margin-top: -1290px;
-  overflow-x: hidden;
+  display: block;
+  width: 603px;
+  height: 100%;
 
-  background-color: $c-main;
+  background: url("../img/bc/tinsel-right.png") no-repeat;
+  background-size: 100%;
 
   @media (max-width: $lg) {
-    height: 1310px;
+    width: 395px;
+
+    background: url("../img/bc/tinsel-right-tab.png") no-repeat;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
+  @media (max-width: $md) {
+    bottom: -80%;
 
-    display: block;
-    width: 603px;
-    height: 100%;
+    width: 125px;
 
-    background: url("../img/bc/tinsel-right.png") no-repeat;
-    background-size: 100%;
-
-    @media (max-width: $lg) {
-      width: 395px;
-
-      background: url("../img/bc/tinsel-right-tab.png") no-repeat;
-    }
-
-    @media (max-width: $md) {
-      width: 125px;
-      height: 393px;
-
-      background: url("../img/bc/tinsel-right-mob.png") no-repeat;
-    }
+    background: url("../img/bc/tinsel-right-mob.png") no-repeat;
   }
+}
+
+.tinsel__left {
+  position: absolute;
+  top: -390px;
+  left: -840px;
+
+  width: 623px;
+  height: 100%;
+
+  background: url("../img/bc/tinsel-left.png") no-repeat;
 }

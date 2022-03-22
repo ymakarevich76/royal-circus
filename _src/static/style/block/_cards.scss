@@ -1,8 +1,6 @@
 .cards {
   padding: 160px 0 90px;
 
-  background-color: $c-main;
-
   @media (max-width: $lg) {
     padding-top: 125px;
   }
@@ -23,29 +21,6 @@
 
   @media (max-width: $md) {
     margin-bottom: 10px;
-  }
-}
-
-.cards__slider {
-  margin-bottom: 90px;
-  padding: 30px;
-
-  @media (max-width: $xl) {
-    max-width: 690px;
-    margin-bottom: 50px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  @media (max-width: $lg) {
-    max-width: 690px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  @media (max-width: $md) {
-    max-width: 220px;
-    margin-bottom: 30px;
   }
 }
 

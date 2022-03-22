@@ -1,0 +1,50 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/breadcrumb.html')
+
+  <div class="main-wrapper">
+    <section class="about-us">
+      <div class="about-us__container container container--800">
+        <h1 class="about-us__title">О компании</h1>
+
+        <div class="about-us__wrap-text">
+          <p class="about-us__text text">
+            Уважаемые клиенты,</p>
+          <p class="about-us__text text">
+            мы рады приветствовать Вас на нашем сайте, посвящённом исключительно дрессированным животным. Мы постарались
+            собрать всех животных в одном месте и предоставили Вам самую полную информацию о программах и ценах.</p>
+          <p class="about-us__text text">
+            Очень надеемся, что работа с сайтом будет Вам комфортна! Мы рады новым клиентам и новому сотрудничеству с
+            нашими коллегами!</p>
+
+          <p class="about-us__text text">
+            Если Вам, кроме животных, необходимы другие услуги — у нас есть всё! Сайты-партнёры располагаются в разделе
+            <a href="#" class="text text--bold">«Наши партнеры»</a>.
+          </p>
+
+          <p class="about-us__text text">Всех Вам благ и побольше счастливых моментов!</p>
+
+          <p class="about-us__text text text--mg">С уважением к Вам, Царский Цирк Анны Кранц.</p>
+        </div>
+      </div>
+      <picture class="about-us__wrap-img">
+        <source srcset="static/img/bc/about-us-ann-mob.png" media="(max-width: 320px)">
+        <source srcset="static/img/bc/ann-1.png" media="(max-width: 575px)">
+        <source srcset="static/img/bc/about-us-ann-tab.png" media="(max-width: 1024px)">
+        <img src="static/img/bc/about-us-ann.png" alt="">
+      </picture>
+      <div class="about-us__wrap-btn">
+        <button type="button" class="about-us__btn btn btn-reset">Все программы</button>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

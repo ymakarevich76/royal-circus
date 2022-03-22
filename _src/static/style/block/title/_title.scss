@@ -34,3 +34,27 @@ h2 {
     line-height: 25px;
   }
 }
+
+.title-line {
+  position: relative;
+
+  margin-bottom: 40px;
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+
+  &::after {
+    @extend %gold;
+
+    content: "";
+    bottom: 0;
+
+    display: block;
+    max-width: 800px;
+    height: 4px;
+    margin: 0 auto;
+
+    border-radius: 7px;
+  }
+}

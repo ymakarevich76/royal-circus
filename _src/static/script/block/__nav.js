@@ -26,3 +26,15 @@ nav.addEventListener('click', (evt) => {
     closeMenu();
   }
 });
+
+
+document.addEventListener('click', e => {
+  let target = e.target;
+  let its_menu = target == nav || nav.contains(target);
+  let its_hamburger = target == hamburger;
+  let menu_is_active = nav.classList.contains('header__nav--active');
+
+  if (!its_menu && !its_hamburger && menu_is_active) {
+    closeMenu();
+  }
+})

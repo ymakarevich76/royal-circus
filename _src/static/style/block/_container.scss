@@ -33,4 +33,17 @@
   // @media (max-width: $sm) {
   //   max-width: 100%;
   // }
+
+  &--800 {
+    max-width: 860px;
+
+    @media (max-width: $lg) {
+      max-width: 830px;
+    }
+
+    @media (max-width: $md) {
+      max-width: 310px;
+      padding: 0 30px;
+    }
+  }
 }

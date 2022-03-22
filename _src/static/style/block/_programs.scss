@@ -1,0 +1,170 @@
+.programs {
+  position: relative;
+  z-index: 10;
+
+  margin-bottom: 75px;
+  padding: 0 0 90px;
+
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
+}
+
+.programs__container {
+  max-width: 1080px;
+}
+
+.programs__title {
+  margin-bottom: 135px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 105px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 65px;
+  }
+}
+
+.programs__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.programs__filter-search {
+  @media (max-width: $md) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.programs__filter-option {
+  min-width: 305px;
+}
+
+.programs__wrapper {
+  @media (max-width: $xl) {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 225px;
+  }
+}
+
+.programs__container-inner {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -30px 60px !important;
+
+  @media (max-width: $md) {
+    margin: 0 -30px 20px !important;
+  }
+}
+
+.programs__card {
+  width: calc(100% / 3 - 60px);
+  margin: 0 30px 60px;
+
+
+  @media (max-width: $xl) {
+    width: calc(100% / 2 - 60px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% / 1 - 60px);
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(n + 8) {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &.active-js {
+    &:nth-child(n + 8) {
+      @media (max-width: $md) {
+        display: block;
+      }
+    }
+  }
+}
+
+.programs__tinsel {
+  bottom: -68%;
+}
+
+.programs__tinsel .tinsel__left {
+  top: -780px;
+}
+
+.programs__wrap-btn {
+  display: none;
+
+  @media (max-width: $md) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+.programs__btn {
+  position: relative;
+
+  padding: 5px 15px;
+
+  text-align: center;
+
+  background: $c-main;
+  border-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+
+    background: linear-gradient(306.69deg, #cb8a1b -29.86%, #dda440 30.34%, #e9c005 66.18%, #e9c104 100%);
+    border-radius: 30px;
+  }
+
+  &.hide-js {
+    display: none;
+  }
+}
+
+.programs__btn-text {
+  &::after {
+    @extend %gold;
+
+    content: "Показать ещё";
+
+    display: block;
+
+    font-weight: 400;
+    font-size: 23.5px;
+    line-height: 45px;
+    font-family: $ff-main;
+    font-style: normal;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+}

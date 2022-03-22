@@ -1,0 +1,54 @@
+.programs-desc {
+  position: relative;
+
+  padding-bottom: 150px;
+
+  @media (max-width: $md) {
+    padding-bottom: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 135px;
+    left: 0;
+
+    display: block;
+    width: 623px;
+    height: 100%;
+
+    background: url("../img/bc/tinsel-left.png") no-repeat;
+
+    @media (max-width: $md) {
+      top: -15px;
+
+      background: url("../img/bc/tinsel-left-mob.png") no-repeat;
+    }
+  }
+}
+
+.programs-desc__container {
+  z-index: 10;
+}
+
+.programs-desc__title {
+  margin-bottom: 10px;
+}
+
+.programs-desc__list {
+  margin: 120px 0;
+
+  @media (max-width: $md) {
+    margin: 35px 0;
+  }
+}
+
+.programs-desc__wrap-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+  @media (max-width: $md) {
+    margin-top: 40px;
+  }
+}

@@ -19,8 +19,10 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
+
+@import "block/text/text";
 
 // @import "block/form/form";
 // @import "block/form/form-group";
@@ -32,8 +34,22 @@
 @import "block/nav";
 @import "block/card";
 @import "block/cards";
+@import "block/cards-slider";
 @import "block/animals";
 @import "block/tinsel";
+@import "block/about-us";
+@import "block/cooperation";
+@import "block/present-list";
+@import "block/programs";
+@import "block/search";
+@import "block/filter";
+@import "block/pagination";
+@import "block/programs-desc";
+@import "block/single";
+@import "block/image-slider";
+@import "block/like";
+@import "block/reviews-slider";
+// @import "block/section";
 @import "block/footer/footer";
 
 // ///////////////////////////////////////// display
