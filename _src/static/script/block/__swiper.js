@@ -34,12 +34,13 @@ const imageSwiper = new Swiper('.image-slider', {
     nextEl: '.single__slider-btn-next',
   },
 
+  pagination: {
+    el: ".single__image-pagination"
+  },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
-      pagination: {
-        el: ".single__slider-pagination"
-      },
     },
     768: {
       slidesPerView: 2
@@ -87,15 +88,46 @@ const swiperReviews = new Swiper('.reviews-slider__swiper', {
     el: ".reviews-slider__pagination"
   },
 
-  breakpoints: {
-    320: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1199: {
-      slidesPerView: 3
-    }
-  }
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1
+  //   },
+  //   768: {
+  //     slidesPerView: 2
+  //   },
+  //   1199: {
+  //     slidesPerView: 3
+  //   }
+  // }
+});
+
+
+
+const swiperVideo = new Swiper('.video-slider', {
+  slidesPerView: 1,
+
+  navigation: {
+    prevEl: '.single__video-btn-prev',
+    nextEl: '.single__video-btn-next',
+  },
+
+  pagination: {
+    el: ".single__video-pagination"
+  },
+
+  loop: true,
+  centeredSlides: true,
+
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1
+  //   },
+  //   768: {
+  //     slidesPerView: 1
+  //   },
+  //   1199: {
+  //     slidesPerView: 1
+  //   }
+  // }
 });

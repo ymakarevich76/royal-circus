@@ -1,0 +1,33 @@
+
+.slider-pagination {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+}
+
+.slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 17px;
+}
+
+.slider-pagination .swiper-pagination-bullet {
+  @extend %gold;
+
+  width: 10px;
+  height: 10px;
+
+  opacity: .5;
+
+  @media (max-width: $md) {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.slider-pagination.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.slider-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
