@@ -35,6 +35,23 @@ h2 {
   }
 }
 
+h3 {
+  font-weight: 800;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-white;
+  font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
+
+  @media (max-width: $md) {
+    font-size: 12px;
+  }
+}
+
 .title-line {
   position: relative;
 

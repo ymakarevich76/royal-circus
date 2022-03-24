@@ -26,6 +26,11 @@
     height: 23px;
 
     fill: $c-white;
+
+    @media (max-width: $md) {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   &:hover {

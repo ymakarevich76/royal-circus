@@ -7,3 +7,41 @@
     margin: 0;
   }
 }
+
+.image-slider__pagination.slider-pagination {
+  display: none;
+
+  @media (max-width: $md) {
+    display: flex;
+  }
+}
+
+.image-slider__pagination.slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @media (max-width: $md) {
+    bottom: -50px;
+  }
+}
+
+.image-slider__box-btn {
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.image-slider__btn-next {
+  margin-right: -60px;
+
+  @media (max-width: $xl) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $lg) {
+    margin-right: 10px;
+  }
+}
+
+.image-slider__btn-prev {
+  @media (max-width: $lg) {
+    margin-left: -10px;
+  }
+}

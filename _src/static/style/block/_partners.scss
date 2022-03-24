@@ -1,64 +1,81 @@
+.partners {
+  padding-bottom: 150px;
+
+  @media (max-width: $md) {
+    padding-bottom: 40px;
+  }
+}
+
 .partners__title {
   margin-bottom: 120px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
 }
 
 .partners__wrap-text {
   margin-bottom: 75px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
 }
 
 .partners__wrap-block {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 722px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+
+  @media (max-width: $md) {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 
 .partners__block {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 208px;
+  max-height: 205px;
   margin-bottom: 70px;
   padding: 20px;
 
   background-color: $c-white;
   border-radius: 26px;
 
-  &:nth-child(1) img {
-    width: 152px;
-    height: 110px;
+  &:hover {
+    box-shadow: 2px 2px 44px rgba(255, 185, 29, .8);
   }
 
-  &:nth-child(2) img {
-    width: 245px;
-    height: 54px;
-    margin-top: 25px;
-  }
+  @media (max-width: $md) {
+    justify-content: space-between;
+    width: 250px;
+    min-height: 130px;
+    margin-bottom: 20px;
 
-  &:nth-child(4) img {
-    width: 138px;
-    height: 82px;
-  }
-
-  &:nth-child(4) img {
-    width: 263px;
-    height: auto;
-  }
-
-  &:nth-child(10) img {
-    width: 282px;
-    height: 50px;
-    margin: 45px 0 35px;
+    border-radius: 20px;
   }
 }
 
 .partners__wrap-img {
   display: flex;
-  flex-grow: 1;
+  // flex-grow: 1;
   justify-content: center;
+  align-items: center;
+  height: 130px;
+
+  @media (max-width: $md) {
+    height: 64px;
+  }
 
   & img {
+    max-height: 100%;
     margin-bottom: 10px;
   }
 }
@@ -74,4 +91,35 @@
   text-align: center;
   color: #333;
   font-style: normal;
+
+  @media (max-width: $md) {
+    min-height: auto;
+
+    font-size: 13px;
+  }
+}
+
+.partners__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $md) {
+    align-items: flex-start;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  & a {
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+      text-decoration: none;
+    }
+  }
+
+  & .partners__text {
+    margin-bottom: 15px;
+  }
 }

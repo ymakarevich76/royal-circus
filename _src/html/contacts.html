@@ -1,0 +1,53 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/breadcrumb.html')
+  <div class="main-wrapper">
+    <section class="contacts">
+      <div class="contacts__container container">
+        <h1 class="contacts__title">Контакты</h1>
+
+        <div class="contacts__block">
+          <a href="tel:+74993755852" class="contacts__phone">+7 (499) 375 58 52</a>
+          <a href="#" class="contacts__link-wrap">
+            <div class="contacts__link">
+              <svg aria-hidden="true">
+                <use xlink:href="static/img/symbol/sprite.svg#insta"></use>
+              </svg>
+            </div>
+            <span class="contacts__info">@tsarkiitsirk</span>
+          </a>
+          <p class="contacts__address">г. Москва, проспект Маршала Жукова, д. 28</p>
+          <p class="contacts__time">Работаем круглосуточно</p>
+        </div>
+
+        <div class="contacts__map">
+          <!-- <img src="static/img/bc/map.png" alt="Карта"> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9754064686763!2d37.47339041570717!3d55.776298980559666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5491c7c4a4173%3A0x3cab42818358ebfb!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCAyOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzE1NA!5e0!3m2!1sru!2sby!4v1648120779747!5m2!1sru!2sby"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contacts__form-wrap">
+          <h2 class="contacts__form-title">Обратная связь</h2>
+          <form action="" class="contacts__form form">
+            <div class="form__block">
+              <input type="text" name="" id="" placeholder="Имя" class="contacts__input">
+              <input type="email" name="" id="" placeholder="E-mail" class="contacts__input">
+            </div>
+            <textarea class="contacts__textarea" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+
+            <div class="contacts__wrap-btn">
+              <button type="submit" class="contacts__btn btn btn-reset">Отправить</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

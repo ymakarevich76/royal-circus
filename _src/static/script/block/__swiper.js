@@ -24,18 +24,18 @@ const swiperCards = new Swiper('.cards__slider', {
   }
 });
 
-const imageSwiper = new Swiper('.image-slider', {
+const imageSwiper = new Swiper('.image-slider__slider', {
   slidesPerView: 3,
 
   loop: true,
 
   navigation: {
-    prevEl: '.single__slider-btn-prev',
-    nextEl: '.single__slider-btn-next',
+    prevEl: '.image-slider__btn-prev',
+    nextEl: '.image-slider__btn-next',
   },
 
   pagination: {
-    el: ".single__image-pagination"
+    el: ".image-slider__pagination"
   },
 
   breakpoints: {
@@ -103,16 +103,16 @@ const swiperReviews = new Swiper('.reviews-slider__swiper', {
 
 
 
-const swiperVideo = new Swiper('.video-slider', {
+const swiperVideo = new Swiper('.video-slider__slider', {
   slidesPerView: 1,
 
   navigation: {
-    prevEl: '.single__video-btn-prev',
-    nextEl: '.single__video-btn-next',
+    prevEl: '.video-slider__btn-prev',
+    nextEl: '.video-slider__btn-next',
   },
 
   pagination: {
-    el: ".single__video-pagination"
+    el: ".video-slider__pagination"
   },
 
   loop: true,

@@ -1,0 +1,35 @@
+.video-slider__box-btn {
+  @media (max-width: $lg) {
+    top: 50%;
+  }
+}
+
+.video-slider__btn-prev {
+  margin-left: -90px;
+
+  @media (max-width: $lg) {
+    margin-left: -50px;
+  }
+}
+
+.video-slider__btn-next {
+  margin-right: -90px;
+
+  @media (max-width: $lg) {
+    margin-right: -50px;
+  }
+}
+
+.video-slider__pagination.slider-pagination {
+  display: none;
+
+  @media (max-width: $md) {
+    display: flex;
+  }
+}
+
+.video-slider__pagination.slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @media (max-width: $md) {
+    bottom: -50px;
+  }
+}

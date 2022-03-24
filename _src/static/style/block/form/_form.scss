@@ -1,2 +1,52 @@
 .form {
 }
+
+input,
+textarea {
+  padding: 18px 30px 18px 45px;
+
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #828282;
+  font-style: normal;
+  letter-spacing: .02em;
+
+  background-color: $c-white;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+
+  @media (max-width: $md) {
+    width: 100%;
+    padding: 12px 29px;
+
+    font-size: 14px;
+  }
+}
+
+textarea {
+  min-width: 648px;
+  max-height: 205px;
+  padding-top: 35px;
+
+  @media (max-width: $md) {
+    min-width: auto;
+    max-height: 115px;
+
+    border-radius: 20px;
+  }
+}
+
+.form__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
