@@ -57,6 +57,11 @@
   }
 }
 
+.animals__container {
+  position: relative;
+  z-index: 10;
+}
+
 .animals__title {
   padding-bottom: 10px;
 }

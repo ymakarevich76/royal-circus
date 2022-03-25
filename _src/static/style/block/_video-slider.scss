@@ -2,6 +2,10 @@
   @media (max-width: $lg) {
     top: 50%;
   }
+
+  @media (max-width: $md) {
+    display: none;
+  }
 }
 
 .video-slider__btn-prev {
@@ -10,13 +14,25 @@
   @media (max-width: $lg) {
     margin-left: -50px;
   }
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+  }
 }
 
 .video-slider__btn-next {
   margin-right: -90px;
 
+  @media (max-width: $xl) {
+    margin-right: 0;
+  }
+
   @media (max-width: $lg) {
     margin-right: -50px;
+  }
+
+  @media (max-width: 991px) {
+    margin-right: 0;
   }
 }
 

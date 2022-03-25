@@ -20,6 +20,11 @@
   }
 }
 
+.about-us__wrap-text {
+  position: relative;
+  z-index: 15;
+}
+
 .about-us__wrap-img {
   position: absolute;
   bottom: -80px;
@@ -47,7 +52,7 @@
 
   @media (max-width: $lg) {
     bottom: -80px;
-    left: 45%;
+    left: 48%;
   }
 
   @media (max-width: $md) {

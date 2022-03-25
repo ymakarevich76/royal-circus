@@ -42,6 +42,11 @@
     }
 
     @media (max-width: $md) {
+      max-width: 690px;
+      padding: 0 15px;
+    }
+
+    @media (max-width: $sm) {
       max-width: 310px;
       padding: 0 30px;
     }

@@ -42,7 +42,7 @@ const imageSwiper = new Swiper('.image-slider__slider', {
     320: {
       slidesPerView: 1,
     },
-    768: {
+    625: {
       slidesPerView: 2
     },
     1199: {
