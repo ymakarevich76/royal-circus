@@ -66,15 +66,11 @@
   letter-spacing: .02em;
   white-space: nowrap;
 
+  transition: .3s;
+
   &:hover {
     color: $c-accent;
     text-decoration: none;
-
-    border-bottom: 2px solid $c-main;
-
-    @media (max-width: $md) {
-      border-bottom: none;
-    }
   }
 
   @media (max-width: $md) {

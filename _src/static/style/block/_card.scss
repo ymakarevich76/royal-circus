@@ -9,6 +9,8 @@
   background: linear-gradient(220.08deg, #aa0901 -4.32%, #d10c01 92.32%);
   border-radius: 26px;
 
+  transition: .3s;
+
   &::after,
   &::before {
     content: "";

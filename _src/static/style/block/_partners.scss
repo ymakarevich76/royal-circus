@@ -48,7 +48,11 @@
   background-color: $c-white;
   border-radius: 26px;
 
+  transition: .3s;
+
   &:hover {
+    text-decoration: none;
+
     box-shadow: 2px 2px 44px rgba(255, 185, 29, .8);
   }
 

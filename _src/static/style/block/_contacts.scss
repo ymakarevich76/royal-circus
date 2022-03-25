@@ -45,6 +45,13 @@
   font-style: normal;
   letter-spacing: .02em;
 
+  transition: .3s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
   @media (max-width: $md) {
     margin-bottom: 20px;
     padding-left: 35px;
@@ -78,6 +85,10 @@
   align-items: center;
   margin-bottom: 80px;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   @media (max-width: $md) {
     margin-bottom: 40px;
   }
@@ -94,7 +105,7 @@
 
   border-radius: 6px;
 
-  transition: .2s;
+  transition: .3s;
 
   & svg {
     width: 23px;
@@ -133,6 +144,13 @@
 
   @media (max-width: $md) {
     font-size: 12px;
+  }
+}
+
+.contacts__info {
+  transition: .3s;
+  &:hover {
+    color: $c-accent;
   }
 }
 

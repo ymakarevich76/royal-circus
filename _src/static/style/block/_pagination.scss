@@ -68,6 +68,8 @@
   font-style: normal;
   letter-spacing: .02em;
 
+  transition: .3s;
+
   &:hover {
     color: $c-accent;
     text-decoration: none;
@@ -75,5 +77,9 @@
 
   @media (max-width: $md) {
     font-size: 12px;
+  }
+
+  &--current {
+    color: $c-accent;
   }
 }

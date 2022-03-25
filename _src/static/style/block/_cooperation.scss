@@ -62,6 +62,8 @@
   color: $c-white;
   font-style: normal;
 
+  transition: .3s;
+
   &:hover {
     color: $c-accent;
     text-decoration: none;
