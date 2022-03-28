@@ -13,8 +13,20 @@
 
   max-width: 1080px;
 
+  @media (max-width: $xl) {
+    max-width: 690px;
+  }
+
   @media (max-width: $lg) {
     max-width: 690px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 540px;
+  }
+
+  @media (max-width: $sm) {
+    max-width: 100%;
   }
 }
 
@@ -29,28 +41,37 @@
 .reviews__wrap-blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 -60px !important;
 
 
   @media (max-width: $md) {
-    // justify-content: center;
-  }
-
-  @media (max-width: 600px) {
     justify-content: center;
+    margin: 0 !important;
   }
 }
 
 .reviews__block {
+  width: calc(100% / 3 - 60px);
+  margin: 0 30px;
   margin-bottom: 120px;
 
+  @media (max-width: $xl) {
+    width: calc(100% / 2 - 60px);
+  }
+
   @media (max-width: $md) {
-    margin-bottom: 40px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 40px;
   }
 }
 
 .reviews__wrap-img {
   margin-bottom: 30px;
+
+  & img {
+    width: 100%;
+  }
 
   @media (max-width: $md) {
     margin-bottom: 15px;
@@ -88,6 +109,10 @@
 .reviews__form-wrap {
   max-width: 648px;
   margin: 0 auto;
+
+  @media (max-width: $md) {
+    max-width: 100%;
+  }
 }
 
 .reviews__form-title {
@@ -97,6 +122,12 @@
 
   @media (max-width: $md) {
     margin-bottom: 40px;
+  }
+}
+
+.reviews__text {
+  @media (max-width: $md) {
+    text-align: center;
   }
 }
 
@@ -128,6 +159,10 @@
   @media (max-width: $md) {
     margin-bottom: 20px;
   }
+}
+
+.reviews__contacts-block .form__block {
+  flex-wrap: wrap;
 }
 
 .reviews__contacts-block input {
